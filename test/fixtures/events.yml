@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  judul: MyString
+  tgl_awal: 2017-12-02 13:09:40
+  tgl_akhir: 2017-12-02 13:09:40
+  gambar: MyString
+  no_tlp: MyString
+  pelaksana: MyText
+  lokasi: MyText
+  jenis_event: MyString
+  sasaran: MyString
+  ketentuan: MyText
+
+two:
+  judul: MyString
+  tgl_awal: 2017-12-02 13:09:40
+  tgl_akhir: 2017-12-02 13:09:40
+  gambar: MyString
+  no_tlp: MyString
+  pelaksana: MyText
+  lokasi: MyText
+  jenis_event: MyString
+  sasaran: MyString
+  ketentuan: MyText

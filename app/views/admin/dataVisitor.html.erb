@@ -1,0 +1,13 @@
+<h1>Data pengunjung</h1>
+<table border = 1px>
+	<tr>
+		<td>Nama</td>
+		<td>Email</td>
+	</tr>
+	<% @visitors.each do |v| %>
+		<tr>
+			<td><%= v.nama %></td>
+			<td><%= v.email %></td>
+		</tr>
+	<% end %>	
+</table>

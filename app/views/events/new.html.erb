@@ -1,0 +1,48 @@
+<h1>Add your event here</h1>
+<%= form_for(@event) do |f| %>
+	<div>
+		<%= f.label :judul %>
+		<%= f.text_field :judul %>
+	</div>
+	<div>
+		<%= f.label :tgl_awal %>
+		<%= f.date_field :tgl_awal %>
+	</div>
+	<div>
+		<%= f.label :tgl_akhir %>
+		<%= f.date_field :tgl_akhir %>
+	</div>
+	<div>
+		<%= f.label :no_tlp %>
+		<%= f.telephone_field :no_tlp %>
+	</div>
+	<div>
+		<%= f.label :pelaksana %>
+		<%= f.text_field :pelaksana %>
+	</div>
+	<div>
+		<%= f.label :lokasi %>
+		<%= f.text_field :lokasi %>
+	</div>
+	<div>
+		<%= f.label :jenis_event %>
+		<%= f.select :jenis_event, ['workshop', 'seminar', 'pelatihan', 'tabligh akbar', 'musik'] %>
+	</div>
+	<div>
+		<%= f.label :sasaran %>
+		<%= f.text_field :sasaran %>
+	</div>
+	<div>
+		<%= f.label :ketentuan %>
+		<%= f.text_field :ketentuan %>
+	</div>
+	<div>
+		<%= f.label :gambar %>
+		<%= f.text_field :gambar %>
+	</div>
+	<div>
+		<%= f.submit "Submit" %>
+	</div>
+<% end %>	
+
+

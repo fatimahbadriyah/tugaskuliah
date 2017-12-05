@@ -1,0 +1,26 @@
+<h1>Data member</h1>
+<table border = 1px>
+	<tr>
+		<td>Nama</td>
+		<td>Alamat</td>
+		<td>Email</td>
+		<td>Password</td>
+		<td>No. Telepon</td>
+		<td>Action</td>
+	</tr>
+	<% @members.each do |m| %>
+		<tr>
+			<td><%= m.nama %></td>
+			<td><%= m.alamat %></td>
+			<td><%= m.email %></td>
+			<td><%= m.password %></td>
+			<td><%= m.no_tlp %></td>
+			<td>
+				<li><%= link_to "show", member_path(m) %></li>
+				<li><%= link_to "edit", edit_member_path(m) %></li>
+				<li><%= link_to "delete", member_path(m), method: :delete %></li>
+			</td>
+		</tr>
+	<% end %>
+
+</table>

@@ -1,0 +1,37 @@
+<h1>Data event</h1>
+<table border = 1px>
+	<tr>
+		<td>Id</td>
+		<td>Judul</td>
+		<td>Tanggal Awal</td>
+		<td>Tanggal Akhir</td>
+		<td>Gambar</td>
+		<td>No. Telepon</td>
+		<td>Pelaksana</td>
+		<td>Lokasi</td>
+		<td>Jenis Event</td>
+		<td>Sasaran</td>
+		<td>Ketentuan</td>
+		<td>Action</td>
+	</tr>
+	<% @events.each do |e| %>
+		<tr>
+			<td><%= e.id %></td>
+			<td><%= e.judul %></td>
+			<td><%= e.tgl_awal %></td>
+			<td><%= e.tgl_akhir %></td>
+			<td><%= e.gambar %></td>
+			<td><%= e.no_tlp %></td>
+			<td><%= e.pelaksana %></td>
+			<td><%= e.lokasi %></td>
+			<td><%= e.jenis_event %></td>
+			<td><%= e.sasaran %></td>
+			<td><%= e.ketentuan %></td>
+			<td>
+				<li><%= link_to "show", event_path(e) %></li>
+				<li><%= link_to "edit", edit_event_path(e) %></li>
+				<li><%= link_to "delete", event_path(e), method: :delete %></li>
+			</td>
+		</tr>
+	<% end %>	
+</table>

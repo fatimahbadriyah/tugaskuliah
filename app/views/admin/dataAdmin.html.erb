@@ -1,0 +1,17 @@
+<h1>Data admin</h1>
+<table border = 1px>
+	<tr>
+		<td>Username</td>
+		<td>Password</td>
+		<td>Nama</td>
+		<td>Alamat</td>
+	</tr>
+	<% @admins.each do |a| %>
+		<tr>
+			<td><%= a.username %></td>
+			<td><%= a.password %></td>
+			<td><%= a.nama %></td>
+			<td><%= a.alamat %></td>
+		</tr>
+	<% end %>	
+</table>

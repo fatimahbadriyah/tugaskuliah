@@ -1,0 +1,28 @@
+<h1>Edit data member</h1>
+<%= form_for(@member) do |f| %>
+	<div>
+		<%= f.label :nama %>
+		<%= f.text_field :nama %>
+	</div>
+	<div>
+		<%= f.label :alamat %>
+		<%= f.text_area :alamat %>
+	</div>
+	<div>
+		<%= f.label :email %>
+		<%= f.text_field :email %>
+	</div>
+	<div>
+		<%= f.label :password %>
+		<%= f.text_field :password %>
+	</div>
+	<div>
+		<%= f.label :no_tlp %>
+		<%= f.text_field :no_tlp %>
+	</div>
+	<div>
+		<%= f.submit %>
+	</div>
+<% end %>	
+
+
